@@ -1,0 +1,11 @@
+version: '3'
+services:
+ web1:
+  build: 
+    context: /root/Docker/
+    args:
+      - userid=1005
+  ports:
+   - 8081:80
+  container_name: jimmy_container
+  command: ["nginx"]
